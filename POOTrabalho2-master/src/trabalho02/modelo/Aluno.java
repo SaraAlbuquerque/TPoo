@@ -18,4 +18,12 @@ public class Aluno extends Usuario {
         this.curso = curso;
         this.ano = ano;
     }
+    
+    public String getCurso(){
+        return curso;
+    }
+    
+    public int getAno(){
+        return ano;
+    }
 }

@@ -6,6 +6,8 @@ package trabalho02.controlador;
 
 import trabalho02.modelo.Biblioteca;
 import trabalho02.modelo.Config;
+import trabalho02.modelo.Livro;
+import trabalho02.modelo.Usuario;
 
 /**
  *
@@ -30,4 +32,13 @@ public class Controlador {
     public void addLivro(String codLivro, String nome, int ano) {
         biblio.addLivro(codLivro, nome, ano);
     }
+    
+    public Usuario buscarUsuario (String cod){
+        return biblio.buscarUsuario(cod);
+    }
+    
+    public Livro buscarLivro (String cod){
+        return biblio.buscarLivro(cod);
+    }
+    
 }

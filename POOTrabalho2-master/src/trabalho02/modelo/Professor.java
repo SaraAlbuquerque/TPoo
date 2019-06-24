@@ -16,5 +16,9 @@ public class Professor extends Usuario{
         super(codUsuario, nome, dias); //emprestimo por X dias
         this.titulacao = titulacao;
     }
+    
+    public String getTitulacao(){
+        return titulacao;
+    }
 
 }

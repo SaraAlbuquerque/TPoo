@@ -65,6 +65,11 @@ public class IUPrincipal extends javax.swing.JFrame {
         jMenu1.setText("Cadastros");
 
         jMenu3.setText("Usuários");
+        jMenu3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu3ActionPerformed(evt);
+            }
+        });
 
         jMenuItem1.setText("Aluno");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
@@ -75,11 +80,21 @@ public class IUPrincipal extends javax.swing.JFrame {
         jMenu3.add(jMenuItem1);
 
         jMenuItem2.setText("Professor");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu3.add(jMenuItem2);
 
         jMenu1.add(jMenu3);
 
         jMenuItem3.setText("Livros");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem3);
 
         jMenuBar1.add(jMenu1);
@@ -211,6 +226,22 @@ public class IUPrincipal extends javax.swing.JFrame {
         cadAluno.setLocationRelativeTo(this);
         cadAluno.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenu3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu3ActionPerformed
+
+    }//GEN-LAST:event_jMenu3ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        IUCadProf cadProf = new IUCadProf(this, true);
+        cadProf.setLocationRelativeTo(this);
+        cadProf.setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        IUCadLivro cadLivro = new IUCadLivro(this, true);
+        cadLivro.setLocationRelativeTo(this);
+        cadLivro.setVisible(true);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     /**
      * @param args the command line arguments

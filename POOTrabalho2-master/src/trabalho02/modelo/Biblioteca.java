@@ -50,6 +50,16 @@ public class Biblioteca {
         }
         return null;
     }
+    
+    public Livro buscarLivro (String cod){
+        
+        Livro livros[] = db.livros();
+        for(int i = 0; i<livros.length; i++){
+            if(livros[i].getCodLivro().equals(cod)) 
+                return livros[i];
+        }
+        return null;
+    }
 
     
 
